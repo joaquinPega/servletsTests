@@ -28,8 +28,8 @@ public class UrlSnarf extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		for(int i =0;i<100;i++)
-			new HttpGet("172.24.126.198:7001/em");
+		for(int i =0;i<100000;i++)
+			new HttpGet("http://172.24.126.198:7001/em");
 	}
 
 	/**
